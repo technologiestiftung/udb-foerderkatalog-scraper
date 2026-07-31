@@ -1,0 +1,11 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+
+# Roh-Export: großes Zwischenergebnis, wird nicht versioniert.
+# Die beiden aufbereiteten CSV (by_company / foerderungen) werden committet.
+data/*_foekat_berlin_raw.csv

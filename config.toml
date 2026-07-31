@@ -1,0 +1,33 @@
+# Konfiguration für den udb-foerderkatalog-scraper.
+# Alle Einstellungen sind optional – fehlende Werte nutzen den Standard.
+
+[suche]
+# Bundesland des Förderempfängers (z. B. "Berlin", "Bayern", "Hamburg").
+bundesland = "Berlin"
+# "ZE" = Förderempfänger/Auftragnehmer (Standard), "ST" = ausführende Stelle.
+ziel = "ZE"
+# true = nur laufende Vorhaben, false = alle (auch abgeschlossene).
+nur_laufende = false
+
+[zeitraum]
+# Nur für den Fallback: Aufteilung der Suche nach Laufzeit-Jahren,
+# falls der Direktexport unvollständig ist.
+jahr_von = 1960
+jahr_bis = 2027
+
+[netzwerk]
+# Sekunden Pause zwischen Requests (bitte fair scrapen, nicht zu klein).
+delay = 1.0
+# Sekunden Timeout pro Request.
+timeout = 60
+
+[ausgabe]
+# Zielordner für alle Ausgabedateien (wird bei Bedarf angelegt).
+verzeichnis = "data"
+# Aggregat je Unternehmen.
+aggregat = "foekat_berlin_by_company.csv"
+# Eine Zeile je Förderung.
+foerderungen = "foekat_berlin_foerderungen.csv"
+# Unveränderter Server-Export (nur wenn roh_speichern = true).
+roh = "foekat_berlin_raw.csv"
+roh_speichern = true

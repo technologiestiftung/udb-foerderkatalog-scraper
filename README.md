@@ -41,9 +41,9 @@ python main.py
 
 ## Ausgabe
 
-| Datei | Inhalt |
-| --- | --- |
-| `foekat_berlin_by_company.csv` | **Je Unternehmen aggregiert** – eine Zeile je Förderempfänger (Anzahl, Gesamtsumme, Zeitraum). Basis für die Anreicherung der Unternehmensdatenbank. |
+| Datei                              | Inhalt                                                                                                                                                                               |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `foekat_berlin_by_company.csv`   | **Je Unternehmen aggregiert** – eine Zeile je Förderempfänger (Anzahl, Gesamtsumme, Zeitraum). Basis für die Anreicherung der Unternehmensdatenbank.                       |
 | `foekat_berlin_foerderungen.csv` | **Je Förderung** – eine schlanke Zeile pro Förderprojekt (Betrag, Zeitraum, Thema). Zeigt, *wie oft*, *wie viel jeweils* und *wann* ein Unternehmen gefördert wurde. |
 
 > Jede Ausgabedatei erhält das Datum der Ausführung als Präfix im Format
@@ -65,13 +65,13 @@ Gruppiert über (Förderempfänger, Ort), absteigend nach Gesamtsumme sortiert:
 
 #### Beispiel (Stand 2026-07-31: 19.351 Förderungen → 2.983 Unternehmen, Σ ≈ 13,17 Mrd. €)
 
-| Förderempfänger | Ort | Anzahl_Förderungen | Fördersumme_EUR_gesamt |
-| --- | --- | ---: | ---: |
-| Technische Universität Berlin | Berlin | 2566 | 1250795431.00 |
-| Charité - Universitätsmedizin Berlin | Berlin | 1091 | 1224831109.00 |
-| Gauss Centre for Supercomputing (GCS) e.V. | Berlin | 7 | 813440933.00 |
-| Senatsverwaltung für Wissenschaft, Gesundheit und Pflege | Berlin | 2 | 784894686.00 |
-| Freie Universität Berlin | Berlin | 1341 | 589833456.00 |
+| Förderempfänger                                         | Ort    | Anzahl_Förderungen | Fördersumme_EUR_gesamt |
+| --------------------------------------------------------- | ------ | ------------------: | ----------------------: |
+| Technische Universität Berlin                            | Berlin |                2566 |           1250795431.00 |
+| Charité - Universitätsmedizin Berlin                    | Berlin |                1091 |           1224831109.00 |
+| Gauss Centre for Supercomputing (GCS) e.V.                | Berlin |                   7 |            813440933.00 |
+| Senatsverwaltung für Wissenschaft, Gesundheit und Pflege | Berlin |                   2 |            784894686.00 |
+| Freie Universität Berlin                                 | Berlin |                1341 |            589833456.00 |
 
 ### Je Förderung (`foekat_berlin_foerderungen.csv`)
 
@@ -87,13 +87,13 @@ sich je Unternehmen jede einzelne Förderung mit Betrag und Zeitraum ablesen:
 
 #### Beispiel (Technische Universität Berlin, älteste Förderungen)
 
-| FKZ | Fördersumme_EUR | Laufzeit von | Laufzeit bis |
-| --- | ---: | --- | --- |
-| WRF2024 | 105033.00 | 06.08.1969 | 31.12.1972 |
-| WNW1102 | 10643.00 | 25.08.1970 | 31.12.1973 |
-| DV 5207 | 105070.00 | 01.01.1971 | 30.06.1972 |
-| DV 5402 | 1397008.00 | 01.07.1971 | 31.12.1973 |
-| DV 5402I | 149563.00 | 01.07.1971 | 31.12.1971 |
+| FKZ      | Fördersumme_EUR | Laufzeit von | Laufzeit bis |
+| -------- | ---------------: | ------------ | ------------ |
+| WRF2024  |        105033.00 | 06.08.1969   | 31.12.1972   |
+| WNW1102  |         10643.00 | 25.08.1970   | 31.12.1973   |
+| DV 5207  |        105070.00 | 01.01.1971   | 30.06.1972   |
+| DV 5402  |       1397008.00 | 01.07.1971   | 31.12.1973   |
+| DV 5402I |        149563.00 | 01.07.1971   | 31.12.1971   |
 
 ## Konfiguration
 
@@ -148,3 +148,49 @@ entsteht so eine monatliche Historie. Der Roh-Export bleibt via
 
 - Bitte fair scrapen: `DELAY` nicht zu niedrig setzen.
 - Encoding der Quelle ist `ISO-8859-15`; die bereinigte Ausgabe ist UTF-8.
+
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
+<!-- prettier-ignore-start -->
+
+<!-- markdownlint-disable -->
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/julizet"><img src="https://avatars.githubusercontent.com/u/52455010?v=4?s=100" width="100px;" alt="Julia Zet"/><br /><sub><b>Julia Zet</b></sub></a><br /><a href="https://github.com/technologiestiftung/udb-foerderkatalog-scraper/commits?author=julizet" title="Code">💻</a> <a href="https://github.com/technologiestiftung/udb-foerderkatalog-scraper/commits?author=julizet" title="Documentation">📖</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## Credits
+
+<table>
+  <tr>
+    <td>
+      Made by  <a href="https://www.technologiestiftung-berlin.de/">
+        <br />
+        <br />
+        <img width="150" src="https://logos.citylab-berlin.org/logo-technologiestiftung-berlin-de.svg" />
+      </a>
+    </td>
+    <td>
+      Supported by <a href="https://www.berlin.de/">
+        <br />
+        <br />
+        <img width="150" src="https://logos.citylab-berlin.org/logo-berlin.svg" />
+      </a>
+    </td>
+  </tr>
+</table>
